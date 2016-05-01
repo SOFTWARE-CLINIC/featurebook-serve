@@ -8,6 +8,7 @@
     "index.js"
   ],
   "scripts": {
+    "pretest": "bower install",
     "test": "npm run test-lib & npm run test-public",
     "test-lib": "mocha --recursive test/lib",
     "test-public": "karma start test/karma.conf.js"
@@ -32,12 +33,14 @@
     "lodash": "4.11.1"
   },
   "devDependencies": {
+    "bower": "1.7.9",
     "chai": "3.5.0",
+    "jasmine-core": "2.4.1",
     "karma": "0.13.22",
     "karma-jasmine": "0.3.8",
     "karma-ng-html2js-preprocessor": "0.2.2",
     "karma-phantomjs-launcher": "1.0.0",
-    "phantomjs-prebuilt": "2.1.7",
-    "mocha": "2.4.5"
+    "mocha": "2.4.5",
+    "phantomjs-prebuilt": "2.1.7"
   }
 }
