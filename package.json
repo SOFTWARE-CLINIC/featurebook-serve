@@ -1,6 +1,6 @@
 {
   "name": "featurebook-serve",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "FeatureBook's HTTP server",
   "main": "index.js",
   "files": [
@@ -28,8 +28,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "express": "4.13.4",
-    "featurebook-api": "git+https://github.com/SOFTWARE-CLINIC/featurebook-api.git",
-    "featurebook-markdown": "git+https://github.com/SOFTWARE-CLINIC/featurebook-markdown.git",
+    "featurebook-api": "1.0.0-alpha.1",
+    "featurebook-markdown": "1.0.0-alpha.1",
     "fs-extra": "0.28.0",
     "lodash": "4.11.1"
   },
