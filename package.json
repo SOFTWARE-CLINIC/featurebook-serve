@@ -1,0 +1,43 @@
+{
+  "name": "featurebook-serve",
+  "version": "1.0.0-alpha.1",
+  "description": "FeatureBook's HTTP server",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "npm run test-lib & npm run test-public",
+    "test-lib": "mocha --recursive test/lib",
+    "test-public": "karma start test/karma.conf.js"
+  },
+  "author": {
+    "name": "Daniel Pacak",
+    "email": "pacak.daniel@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SOFTWARE-CLINIC/featurebook-serve.git"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "4.13.4",
+    "featurebook-api": "git+https://github.com/SOFTWARE-CLINIC/featurebook-api.git",
+    "featurebook-markdown": "git+https://github.com/SOFTWARE-CLINIC/featurebook-markdown.git",
+    "fs-extra": "0.28.0",
+    "lodash": "4.11.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "karma": "0.13.22",
+    "karma-jasmine": "0.3.8",
+    "karma-ng-html2js-preprocessor": "0.2.2",
+    "karma-phantomjs-launcher": "1.0.0",
+    "phantomjs-prebuilt": "2.1.7",
+    "mocha": "2.4.5"
+  }
+}
