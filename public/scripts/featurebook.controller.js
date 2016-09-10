@@ -8,8 +8,6 @@
 
   function FeatureBookController($scope, $window, featureBookService) {
 
-    activate();
-
     function activate() {
       featureBookService.getMetadata().then(function (metadata) {
         $scope.metadata = metadata;
@@ -21,6 +19,8 @@
       });
     }
 
+    activate();
+
   }
 
-})();
+}());

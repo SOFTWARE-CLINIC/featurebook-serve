@@ -1,7 +1,6 @@
 (function () {
   'use strict';
 
-  /* global angular */
   angular.module('scFeatureBook')
     .filter('encodeURIComponent', encodeURIComponentFilter);
 
@@ -11,4 +10,4 @@
     return $window.encodeURIComponent;
   }
 
-})();
+}());
