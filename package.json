@@ -13,8 +13,8 @@
     "test": "npm run test-lib & npm run test-public",
     "test-lib": "mocha test/lib/**/*.spec.js --recursive",
     "test-public": "karma start test/karma.conf.js",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec test/lib/**/*.spec.js",
-    "coveragetocodeclimate": "codeclimate-test-reporter < ./coverage/lcov.info"
+    "coverage": "istanbul cover --dir coverage/lib node_modules/mocha/bin/_mocha -- -R spec test/lib/**/*.spec.js",
+    "coveragetocodeclimate": "codeclimate-test-reporter < ./coverage/lib/lcov.info && codeclimate-test-reporter < ./coverage/public/lcov.info"
   },
   "author": {
     "name": "Daniel Pacak",
@@ -42,6 +42,7 @@
     "istanbul": "0.4.5",
     "jasmine-core": "2.5.1",
     "karma": "1.3.0",
+    "karma-coverage": "1.1.1",
     "karma-jasmine": "1.0.2",
     "karma-ng-html2js-preprocessor": "0.2.2",
     "karma-phantomjs-launcher": "1.0.2",

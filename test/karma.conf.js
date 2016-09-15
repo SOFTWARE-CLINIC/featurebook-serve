@@ -2,6 +2,7 @@ module.exports = function (config) {
   config.set({
     basePath: './../',
     frameworks: ['jasmine'],
+    reporters: ['progress', 'coverage'],
     files: [
       'public/bower_components/angular/angular.min.js',
       'public/bower_components/angular-route/angular-route.min.js',
@@ -33,14 +34,22 @@ module.exports = function (config) {
     plugins: [
       'karma-ng-html2js-preprocessor',
       'karma-jasmine',
-      'karma-phantomjs-launcher'
+      'karma-phantomjs-launcher',
+      'karma-coverage'
     ],
     preprocessors: {
-      'public/views/**/*.html': ['ng-html2js']
+      'public/views/**/*.html': ['ng-html2js'],
+      'public/scripts/**/*.js': 'coverage'
     },
     ngHtml2JsPreprocessor: {
       stripPrefix: 'public/',
       moduleName: 'scFeatureBook.templates'
+    },
+    coverageReporter: {
+      dir: 'coverage',
+      reporters: [
+        {type: 'lcov', subdir: 'public'}
+      ]
     },
     logLevel: config.LOG_INFO,
     singleRun: true
