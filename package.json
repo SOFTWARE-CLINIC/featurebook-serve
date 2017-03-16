@@ -1,6 +1,6 @@
 {
   "name": "featurebook-serve",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "FeatureBook's HTTP server",
   "main": "index.js",
   "files": [
