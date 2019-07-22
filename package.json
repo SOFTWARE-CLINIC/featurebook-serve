@@ -25,7 +25,7 @@
     "url": "git+https://github.com/SOFTWARE-CLINIC/featurebook-serve.git"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   },
   "license": "MIT",
   "dependencies": {
