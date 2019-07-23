@@ -25,28 +25,28 @@
     "url": "git+https://github.com/SOFTWARE-CLINIC/featurebook-serve.git"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   },
   "license": "MIT",
   "dependencies": {
-    "express": "4.15.2",
-    "featurebook-api": "1.0.0-alpha.4",
-    "featurebook-markdown": "1.0.0-alpha.1",
-    "fs-extra": "0.30.0",
-    "lodash": "4.17.4"
+    "express": "^4.17.1",
+    "featurebook-api": "^1.0.0-alpha.5",
+    "featurebook-markdown": "^1.0.0-alpha.1",
+    "fs-extra": "^8.1.0",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "bower": "1.8.0",
-    "chai": "3.5.0",
-    "codeclimate-test-reporter": "0.4.1",
-    "istanbul": "0.4.5",
-    "jasmine-core": "2.5.2",
-    "karma": "1.5.0",
-    "karma-coverage": "1.1.1",
-    "karma-jasmine": "1.1.0",
-    "karma-ng-html2js-preprocessor": "1.0.0",
-    "karma-phantomjs-launcher": "1.0.4",
-    "mocha": "3.2.0",
-    "phantomjs-prebuilt": "2.1.14"
+    "bower": "^1.8.8",
+    "chai": "^4.2.0",
+    "codeclimate-test-reporter": "^0.5.1",
+    "istanbul": "^0.4.5",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.1.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^2.0.1",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mocha": "^6.2.0",
+    "phantomjs-prebuilt": "^2.1.16"
   }
 }
